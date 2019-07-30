@@ -6,5 +6,4 @@ RUN apk --update add tor runit tini nginx && \
 COPY root /
 
 ENTRYPOINT ["tini", "--"]
-#CMD ["runsvdir", "/etc/service"]
 CMD ["sh","-c","/opt/init.sh && runsvdir /etc/service"]

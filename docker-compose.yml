@@ -2,7 +2,7 @@ version: "3.7"
 services:
 
   tor:
-    image: trasba/tor:test300719
+    image: trasba/tor:latest
     volumes:
       - ./hidden_service:/lib/tor/hidden_service
 #      - ./tor:/etc/service/tor
