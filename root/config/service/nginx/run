@@ -1,0 +1,2 @@
+#!/bin/sh
+nginx -g 'pid /tmp/nginx.pid; daemon off; error_log /dev/stdout info;'
